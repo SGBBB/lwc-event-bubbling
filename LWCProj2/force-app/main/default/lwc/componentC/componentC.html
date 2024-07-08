@@ -1,0 +1,19 @@
+<template>
+    <lightning-card  variant="Narrow"  title="componentC" icon-name="standard:account">
+        <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+        <p class="slds-p-horizontal_small"></p>
+        <lightning-input 
+          type="text"
+          label="input Data"
+          lwc:ref="fullname"
+           
+        ></lightning-input>
+        <lightning-button 
+          variant="destructive-text"
+          label="PopulateDataToParent" 
+          onclick={handleClick} 
+        ></lightning-button>
+        <p slot="footer">Card Footer</p>
+    </lightning-card>
+    
+</template>
